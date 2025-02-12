@@ -34,7 +34,7 @@ export default function App() {
       if(customInterval){
         clearInterval(customInterval);
     
-      }
+      } 
     }
 
     const clear = () =>{
@@ -57,15 +57,15 @@ export default function App() {
       });
       
 
-      /*setMinutes((prevState)=>{
+     /* setMinutes((prevState)=>{
         if (prevState+1 == 60){
           setHours(hours + 1);
           return 0;
         }
         return prevState + 1;
 
-      });*/
-
+      });
+*/
     }
 
     

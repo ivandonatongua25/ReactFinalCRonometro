@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "cronoFatallity",
-    "slug": "cronoFatallity",
+    "slug": "cronopl",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -23,6 +23,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "494ac50e-b458-4608-a62e-5b39a271ed05"
+      }
+    },
+    "owner": "ivandonatongua"
   }
 }
