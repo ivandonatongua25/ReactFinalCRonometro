@@ -90,14 +90,15 @@ export default function App() {
 
 <StatusBar style="auto" />
 <View  style={styles.buttonConteiner}>
+    <View style={styles.buttonConteine}> 
+        <Button title='Start' onPress={startTimer} />
 
-  <Button title='Start' onPress={startTimer} />
+        <Button title='Clear' onPress={clear}/>
 
-  <Button title='Clear' onPress={clear}/>
+        <Button  title='Stop' onPress={stopTimer}/>
 
-  <Button  title='Stop' onPress={stopTimer}/>
 
-  
+    </View>
 
 </View>
 
@@ -113,40 +114,52 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ff2',
+    backgroundColor: '#ff0',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection : 'column',
     justifyContent : 'flex-start',
-    marginTop :100,
+    marginTop :10,
   },
   texto : {
     display : 'flex',
     fontSize : 40,
     flexDirection : 'row',
     justifyContent : 'flex-start',
-    backgroundColor : 'red',
-    margin : 10,
-
+    backgroundColor : '',
+    margin : 40,
+    marginTop : 380,
+    color : 'red'
   },
   textTimer :{
     fontSize : 90,
-    backgroundColor : 'yellow',
+    backgroundColor : '',
     margin : 2,
+    marginTop : 0,
+    left : 0
 
   },
   buttonConteiner : {
 
-    width : 250,
-    height : 10,
   
 
     flexDirection : 'row',
   justifyContent : 'space-around',
   textAlign : 'center',
-  height : 100,
-  marginTop : 10,
-  left : 70,
+  backgroundColor :'red',
+    
+  },
+  buttonConteine : {
+
+  
+
+    flexDirection : 'row',
+  justifyContent : 'space-around',
+  textAlign : 'center',
+  backgroundColor :'',
+  height : 20000,
+  marginTop : 30,
+  left : 110,
 
   marginHorizontal : -10,
 
@@ -155,8 +168,10 @@ const styles = StyleSheet.create({
   },
   button1 : {
     backgroundColor :'blue',
+    height : 30,
+    width : 40,
   },
   button2 : {
-    backgroundColor : 'green',
+    backgroundColor : 'black',
   }
 });
