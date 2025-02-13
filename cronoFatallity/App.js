@@ -12,8 +12,6 @@ export default function App() {
        
       <Cronometro/>
           
-    
-      
       <StatusBar style="auto" />
     </View>
   );
